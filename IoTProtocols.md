@@ -234,3 +234,83 @@
 * BLE 5
   * High throughput 2Mbps
   * reduced energy consumption 
+
+
+### Direction Finding 
+
+* Hallmark feature of Bluetooth 5.1 
+* Requires radio changes
+* Enables positioning solution to not only rely on RSSI but also the actual direction of a signal 
+  
+
+#### Use cases  
+
+
+* Asset tracking 
+  * Real-time location system RTLS
+  * Indoor positioning 
+  * Point of interest 
+    * proximity marketing 
+  * Item finding 
+    * More advanced iterm finding solutions 
+
+* Angle of Arrival (AoA)
+  * Transmitter 
+    * Simple beacon 
+    * single antenna 
+    * no I/Q calculations needed 
+
+  * Receiver 
+    * Advanced 
+    * Antenna array and RF switch 
+    * I/Q data needed for angle estimation 
+
+#### Asset tracking -RTLS 
+  * Real time location system 
+  * AoA method 
+  * Tag is a simple transmitter 
+  * Multiple locator at fixed locations 
+  * Each locator determines the direction of signal 
+  * The location engine determins the position of tag 
+
+![Asset tracking ](ble-rtls-asset-tracking.png)
+
+#### LE Audio 
+
+* Announced in Jan 2020
+* Isochronous channels 
+  * audio streaming to one or more connected devices 
+  * channels are synchronised 
+* New audio codec 
+  * Low complexity communication coded (LC3)
+* Broadcast audio for audio sharing 
+
+
+### Ultra Wide Band 
+#### What is UWB ? 
+ 
+ UWB operates with the signal's so called *Time of Flight* rather than RSSI(Received Signal Strength Indicator) which makes the technology much more precise and enables it to make very exact ranging measurements.
+
+* pulse radio technology based on `IEEE 802.15.4 Low Rate Wireless Personal Area Network`
+* Uses impulse radio with extremely short pulses( <2ns)
+* Uses very wide channels of at least 500 MHz
+* Data rates of upto 27 Mbps
+
+* `Indoor GPS` 
+  * Unbeatably precise and stable 
+    * `+-30 cm` accuracy  
+* No interference with other radio communication system 
+* Resistant to multipath signal propagation
+* Use of low power trasceivers 
+* Triangulation based on `Time difference of arrival`
+
+
+
+#### UWB  Use Cases 
+
+*  Secure Access Control 
+  * Operates in close proximity ( a more secure solution than NFC)
+  * Protection from eavesdropping and relay attacks
+* Secure Wireless payments 
+* Location based services 
+![](FiRa_Image_UWB%20Use%20Cases-High-Res.webp)
